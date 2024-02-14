@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+   <header>
+       <video src="valentinas2.mp4" muted loop id="manoVideo"></video>
+       <div>
+           <h1>Valentino diena</h1>
+           <p>Valentino diena švenčiama vasario 14 d.<br>
+Ji vadinama įsimylėjėlių arba meilės diena.</p>
+      
+      <button id="manoBtn" onclick="manoJungiklis();">Play</button>
+      
+       </div>
+       
+   </header>
+   <footer>
+       <p>2024 &copy;</p>
+   </footer>
+   
+   <script>
+       
+       let video = document.getElementById('manoVideo');
+       let mygtukas = document.getElementById('manoBtn');
+       
+       function manoJungiklis(){
+            if(video.paused){
+               video.play();
+               mygtukas.innerHTML = 'Pause';
+               }else{
+               video.pause();
+               mygtukas.innerHTML = 'Play';   
+               };  
+       };
+       
+       
+    
+    
+    
+   </script>
+   
+  
+    
+</body>
+</html>
